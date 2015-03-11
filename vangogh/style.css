@@ -1,0 +1,37 @@
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	position: relative;
+	margin: 0 auto;
+}
+
+.btn {
+	overflow: hidden;
+	position: relative;
+}
+
+.btn.btn-start,.btn.btn-start:hover,.btn.btn-start:active {
+	background: none;
+}
+
+#bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	background-color: CORNFLOWERBLUE;
+	z-index: -1;
+}
+
+canvas {
+	width: 100%
+}
+
+small {
+	color: #ccc;
+}
