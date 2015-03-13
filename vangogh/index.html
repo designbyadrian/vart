@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	
-	<script src="vangogh.js"></script>
+	
 </head>
 <body>
 
@@ -19,6 +19,16 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<form id="form" action="../uploader/image.php" method="post" enctype="multipart/form-data" target="upload_target">
+					<input type="hidden" name="MAX-FILE-SIZE" value="3072000"/>
+					<input id="file" name="art" type="file" class="filestyle" data-buttonBefore="true" data-buttonText="Choose image" data-size="lg" data-iconName="fa fa-upload">
+				</form>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="well">
@@ -26,22 +36,51 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col-xs-12 col-md-3">
-				<div class="btn btn-lg btn-default btn-block btn-upload disabled" onclick=""><i class="fa fa-upload"></i> Upload</div>
+			<div class="col-xs-12">
+				
+				<div class="progress">
+					<div id="bar" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+				</div>
+
 			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="btn btn-lg btn-default btn-block btn-start" onclick="setup()"><i class="fa fa-paint-brush"></i> Paint!<div id="bar"></div></div>
-			</div>
-			<div class="col-xs-12 col-md-3">
+		</div>
+
+
+		<div class="row">
+
+			<div class="col-xs-12 col-md-12">
 				<a href="#" id="btnSave" class="btn btn-lg btn-default btn-block btn-save disabled" onclick=""><i class="fa fa-gift"></i> Save</a>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col-xs-12"><small>CSS by Bootstrap, Icons by Font Awesome, fun by Adrian von Gegerf</small></div>
+			<div class="col-xs-6">
+				<h3><div class="badge">1</div> Choose image</h3>
+				<h3><div class="badge">2</div> Meditate</h3>
+				<h3><div class="badge">3</div> Appreciate vart</h3>
+				<h3><div class="badge">4</div> Save to savor later</h3>
+			</div>
+			<div class="col-xs-6">
+				<h3>Wha izzit?</h3>
+				<p>An interpretation of van Gogh using Javascript inspired by <a href="http://vart.institute/">var t;</a> by <a href="#">Jenn Schiffer</a></p>
+				<p>Read more about my vartworks <a href="https://github.com/designbyadrian/vart/wiki/">on GitHub</a></p>
+			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-xs-12"><p class="text-right">
+				<small>CSS by Bootstrap, Icons by Font Awesome, fun by Adrian von Gegerf</small>
+			</p></div>
+		</div>
+
 	</div>
 
-	
+	<iframe id="upload_target" name="upload_target" src="" width="0" height="0"></iframe>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../uploader/filestyle.min.js"></script>
+	<script type="text/javascript" src="vangogh.js"></script>
 </body>
 </html>

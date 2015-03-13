@@ -4,6 +4,10 @@ body {
 	padding: 0;
 }
 
+form {
+	margin-bottom: 20px;
+}
+
 #wrapper {
 	position: relative;
 	margin: 0 auto;
@@ -18,18 +22,16 @@ body {
 	background: none;
 }
 
-#bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 0%;
-	background-color: CORNFLOWERBLUE;
-	z-index: -1;
+#upload_target {
+	display: none;
 }
 
 canvas {
 	width: 100%
+}
+
+h3 >.badge {
+	vertical-align: middle
 }
 
 small {
