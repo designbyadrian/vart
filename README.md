@@ -11,4 +11,4 @@ My vartworks are open-source, feel free to fix my shit if you want ;)
 ###Vartworks by von Geg:
 * [001 van Gogh](https://github.com/designbyadrian/vart/wiki/vanGogh)
 
-* *the other 1% is PHP for image uploading.
+> *the other 1% is PHP for image uploading.
