@@ -1,6 +1,6 @@
 # var t;
 
-Inspired by [Jenn Schiffer]()'s art+javascript examples, I interprate art and make them work with 99%* JavaScript. See the original vartworks on [vart.institute](http://vart.institute/)
+Inspired by [Jenn Schiffer](http://jennmoney.biz)'s art+javascript examples, I interprate art and make them work with 99%* JavaScript. See the original vartworks on [vart.institute](http://vart.institute/)
 
 I'm a sucker for great design, and highly appreciate art, though just above average in knowledge about art.
 
